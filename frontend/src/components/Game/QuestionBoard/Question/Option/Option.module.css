@@ -1,0 +1,33 @@
+.OptionContainer {
+    width: 75%;
+    border: 3px solid;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.Enable:hover {
+    filter: brightness(90%);
+}
+
+.Selected {
+    transition: none;
+    font-weight: 700;
+}
+
+.Text {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+@media (max-width: 500px) {
+    .Option {
+        width: 90%;
+    }
+
+    .Text {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,118 @@
+.Player {
+    width: calc(100% - 20px);
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    border: 3px outset transparent;
+    border-bottom: 2px solid #000000;
+    transition: 0.2s linear;
+}
+
+.Player:first-child {
+    border-top-left-radius: 20px;
+}
+
+.Player:hover {
+    border: 3px outset #5e5e5e;
+    box-shadow: 2px 2px 5px #000000;
+    -webkit-box-shadow: 2px 2px 5px #000000;
+    -moz-box-shadow: 2px 2px 5px #000000;
+}
+
+.Point {
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #336600;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    font-family: 'Nerko One', cursive;
+}
+
+.NameContainer_1 {
+    min-width: 0px;
+    margin-left: 20px;
+}
+
+.Placement {
+    height: 20px;
+}
+
+.Placement > i {
+    font-size: 18px;
+}
+
+.NameContainer_2 {
+    display: flex;
+    align-items: center;
+}
+
+.Name {
+    font-size: 26px;
+    font-family: 'Texturina', serif;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.You {
+    color: rgb(236, 100, 75);
+    animation: wheelHueColor 25s infinite;
+}
+
+.NameContainer_2 > i {
+    margin-left: 20px;
+    font-size: 40px;
+    color: rgb(236, 100, 75);
+    animation: wheelHueColor 25s infinite;
+}
+
+@keyframes wheelHueColor {
+    from, to { color: rgb(236, 100, 75); }
+    16%      { color: rgb(219, 10, 91); }
+    32%      { color: rgb(37, 116, 169); }
+    48%      { color: rgb(22, 162, 134); }
+    64%      { color: rgb(194, 176, 73); }
+    80%      { color: rgb(243, 156, 18); }
+}
+
+@media (max-width: 1300px) {
+    .Player {
+        padding: 5px 10px;
+        border-right: 2px solid #000000;
+        border-bottom: none;
+    }
+
+    .Player:last-child {
+        border-top-right-radius: 20px;
+    }
+
+    .NameContainer_1 {
+        width: 175px;
+        margin-left: 10px;
+    }
+
+    .Placement > i {
+        font-size: 15px;
+    }
+
+    .Point {
+        min-width: 35px;
+        min-height: 35px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 26px;
+    }
+
+    .Name {
+        font-size: 20px;
+    }
+
+    .NameContainer_2 > i {
+        font-size: 26px;
+    }
+}

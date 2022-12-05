@@ -1,0 +1,42 @@
+.Textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 8px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #799fff;
+}
+
+.Textbox i {
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.Textbox .Input {
+    border: none;
+    outline: none;
+    background: none;
+    color: #ffffff;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.Button {
+    width: 100%;
+    background: none;
+    border: 3px solid #799fff;
+    color: #ffffff;
+    margin: 20px 0;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+.Button:hover {
+    border-color: #5283ff;
+    color: #e0e0e0;
+}

@@ -1,0 +1,41 @@
+.Container {
+    width: 100%;
+    height: 100%;
+    background: #7b14a7;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow-y: auto;
+}
+
+.UpwardButton {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
+
+.Container::-webkit-scrollbar {
+    width: 7px;
+}
+
+.Container::-webkit-scrollbar-track {
+    background: none;
+}
+
+.Container::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #b1b1b1;
+}
+
+.Container::-webkit-scrollbar-thumb:hover {
+    background: #858585;
+}
+
+@media (max-width: 500px) {
+    .UserList {
+        text-align: center;
+    }
+
+    .UpwardButton {
+        display: none !important;
+    }
+}

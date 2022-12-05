@@ -1,0 +1,29 @@
+.Card {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    background-color: #feff9c !important;
+}
+
+.Content {
+    display: block;
+    height: 170px;
+    overflow-y: hidden;
+}
+
+.Question {
+    margin-top: 10px !important;
+}
+
+.Actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .Card {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+.Container {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #a6daf7;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Container::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+.Container::-webkit-scrollbar-track {
+    background: none;
+}
+
+.Container::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #b1b1b1;
+}
+
+.Container::-webkit-scrollbar-thumb:hover {
+    background: #858585;
+}
+
+@media (max-width: 1300px) {
+    .Container {
+        display: flex;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+}

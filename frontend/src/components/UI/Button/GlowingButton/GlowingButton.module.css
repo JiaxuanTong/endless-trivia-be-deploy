@@ -1,0 +1,50 @@
+.GlowingButton {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 18px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 36px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    z-index: 1;
+}
+
+.GlowingButton::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.GlowingButton:hover {
+    animation: animate 8s linear infinite;
+}
+
+.GlowingButton:hover::before {
+    filter: blur(10px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}

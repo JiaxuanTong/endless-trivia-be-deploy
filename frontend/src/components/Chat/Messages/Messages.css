@@ -1,0 +1,61 @@
+/* Important note: I took this from online tutorial 
+The link is here: https://www.youtube.com/watch?v=ZwFA3YMfkoc&ab_channel=JavaScriptMastery 
+Although I would say I made significant changes to it so that it align from the bottom*/
+
+.messages {
+  padding: 5% 0;
+  overflow-y: auto;
+  height: 80%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden
+}
+
+.wrapper {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.content {
+  display: table-cell;
+  max-height: 100%;
+  width: 100%;
+  vertical-align: bottom;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.message-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

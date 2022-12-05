@@ -1,0 +1,42 @@
+.FormContainer {
+    width: 300px;
+    position: absolute;
+    top: 27.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.Button {
+    font-size: 32px;
+    margin-bottom: 50px;
+    padding: 14px 0;
+    cursor: pointer;
+    transition: all 0.25s linear;
+    border-bottom: 6px solid transparent;
+}
+
+.Button.Active {
+    border-bottom: 6px solid #2ea764;
+}
+
+.SigninButton {
+    float: left;
+    color: #799fff;
+}
+
+.SigninButton:hover {
+    color: #5283ff;
+    transition: all 0.2s linear;
+}
+
+.SignupButton {
+    float: right;
+    color: #ffb579;
+}
+
+.SignupButton:hover {
+    color: #ff933a;
+    transition: all 0.2s linear;
+}

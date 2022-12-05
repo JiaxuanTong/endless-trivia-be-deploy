@@ -1,0 +1,17 @@
+.GradientButton {
+    color: #ffffff;
+    font-family: "montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    border: none;
+    padding: 24px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    background-size: 200%;
+    transition: 0.6s;
+}
+
+.GradientButton:hover {
+    background-position: right;
+}

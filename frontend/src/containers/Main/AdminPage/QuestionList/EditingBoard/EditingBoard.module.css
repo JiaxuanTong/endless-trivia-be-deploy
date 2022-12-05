@@ -1,0 +1,41 @@
+.EditingBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 300px;
+    background: #ffffff;
+    padding: 20px 20px;
+}
+
+.Input {
+    width: 300px;
+    height: auto;
+    margin: 10px 0 !important;
+}
+
+.ShorterInput {
+    width: 200px;
+}
+
+.RemoveButton {
+    margin-left: 2px !important;
+}
+
+.AddButton {
+    margin-right: 2px !important;
+}
+
+.AddButtonPlaceholder {
+    width: 48px;
+    height: 48px;
+    margin-right: 2px !important;
+}
+
+.Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 20px;
+}

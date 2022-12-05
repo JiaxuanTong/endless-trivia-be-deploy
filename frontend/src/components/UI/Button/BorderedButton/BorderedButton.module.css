@@ -1,0 +1,48 @@
+.BorderedButton {
+    position: relative;
+    font-family: "montserrat", sans-serif;
+    background: none;
+    border: 4px solid;
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.BorderedButton::before, .BorderedButton::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: #353a49;
+    transform: skewX(50deg);
+    transition: 0.4s linear;
+}
+
+.BorderedButton::before {
+    top: -4px;
+    left: 10%;
+}
+
+.BorderedButton::after {
+    bottom: -4px;
+    right: 10%;
+}
+
+.BorderedButton:hover::before {
+    left: 80%;
+}
+
+.BorderedButton:hover::after {
+    right: 80%;
+}
+
+@media (max-width: 500px) {
+    .BorderedButton {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+}

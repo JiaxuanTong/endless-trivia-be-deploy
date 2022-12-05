@@ -1,0 +1,73 @@
+.MainPage {
+    width: 100vw;
+    height: 100vh;
+}
+
+.NavigationContainer {
+    height: 190px;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.NavigationContainer * {
+    display: block;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.Clear {
+    clear: both;
+}
+
+.TitleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(80% - 250px);
+    text-align: center;
+    padding: 0 20px;
+}
+
+.PlayButtonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    padding-bottom: 50px;
+}
+
+.WelcomeMessage {
+    color: #2cd890;
+    font-size: calc(14px + 1vw);
+}
+
+.DisplayName {
+    font-family: 'Goldman', cursive;
+}
+
+@media (max-width: 500px) {
+    .NavigationContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .NavigationContainer * {
+        display: inline;
+        float: none;
+        margin: 5px 10px;
+    }
+
+    .Clear {
+        display: none;
+    }
+
+    .TitleContainer {
+        height: calc(80% - 105px);
+    }
+}

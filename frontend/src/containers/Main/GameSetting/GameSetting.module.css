@@ -1,0 +1,239 @@
+/* body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    width: 100%;
+    height: 100%;
+} */
+.NavigationContainer {
+    height: 70px;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+.NavigationContainer * {
+    display: block;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.PageTitle{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ol, ul {
+    padding-left: 30px;
+    /*margin-left: auto;*/
+}
+.BoardRow{
+    /*min-width: 600px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+}
+.BoardRow:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.category {
+    background: paleturquoise;
+    border: 1px solid #999;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    /*line-height: 34px;*/
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    width: 200px;
+    border-radius: 100px;
+    color: darkslateblue;
+
+}
+.category:hover{
+    color: #ffb579;
+    background: wheat;
+}
+
+.category:focus {
+    color: #ffb579;
+    outline: none;
+    background: wheat;
+}
+.category:active {
+    color: #ffb579;
+    outline: none;
+    background: wheat;
+}
+
+
+.button{
+    background: white;
+    border: 1px solid #999;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    /*line-height: 34px;*/
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    width: 150px;
+    border-radius: 50%;
+    color: darkslateblue;
+}
+.button:hover{
+    color: #ffb579;
+    background: wheat;
+}
+
+.button:focus {
+    color: #ffb579;
+    outline: none;
+    background: wheat;
+}
+.button:after {
+    color: #ffb579;
+    outline: none;
+    background: wheat;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+.Board{
+    min-width: 500px;
+    background-color: steelblue;
+    /*padding: 200px 900px;*/
+    height: 30%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.BoardTitle1, .BoardTitle2, .BoardTitle3{
+    background-color: white;
+    height: 32px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    color: darkslateblue;
+}
+
+input.LobbyNameInput{
+    width: 90%;
+    height: 100%;
+    font-size: large;
+    color: darkslateblue;
+    border-radius: 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*.game {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+/*.game-info {*/
+/*    margin-left: 20px;*/
+/*}*/
+.DecisionBoard{
+    /*display: inline-block;*/
+    display:flex;
+    justify-content: center;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+.nameChangeBoard{
+
+}
+.input{
+    text-decoration-color:darkgoldenrod;
+    background: lightgoldenrodyellow;
+    border: 1px;
+    padding: 1.3%;
+    width: 91%;
+}
+
+@media (min-width: 0px) and (max-width: 812px) {
+
+    .NavigationContainer{
+        padding-top: 0;
+        height: 10%;
+    }
+
+    .PageTitle{
+        font-size: 30px;
+    }
+
+    .BoardTitle1, .BoardTitle2, .BoardTitle3{
+        font-size: 20px;
+    }
+
+    .BoardTitle2{
+        height: 20%;
+    }
+
+    .Board{
+        min-width: 250px;
+        background-color: steelblue;
+        /*padding: 200px 900px;*/
+        height: 30%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .BoardRow{
+        /*min-width: 600px;*/
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categorybody{
+        height: 200px;
+        overflow-y: auto;
+    }
+
+    .category {
+        background: paleturquoise;
+        border: 1px solid #999;
+        float: left;
+        font-size: 20px;
+        font-weight: bold;
+        /*line-height: 34px;*/
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        padding: 10px 10px;
+        text-align: center;
+        width: 200px;
+        border-radius: 100px;
+        color: darkslateblue;
+    
+    }
+}
