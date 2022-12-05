@@ -12,7 +12,7 @@ const navFunctions = require('./services/navigation.js');
 const lobbyFunctions = require('./services/lobbyRoom.js');
 const setFunctions = require('./services/gameSetting.js');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4001;
 
 const app = express();
 app.use(index);
